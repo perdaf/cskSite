@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À Propos | CS-Kréyasion</title>
+    <meta
+      name="description"
+      content="Découvrez l'histoire de CS-Kréyasion, entreprise familiale martiniquaise spécialisée dans l'artisanat créole."
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-wood-900 text-white sticky top-0 z-50 shadow-lg">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a
+              href="../index.html"
+              class="text-2xl font-serif font-bold flex items-center"
+            >
+              <span class="bg-wood-700 text-white p-2 rounded-lg mr-2">
+                <i class="fas fa-leaf"></i>
+              </span>
+              CS-Kréyasion
+            </a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="../index.html"
+              class="hover:text-wood-300 transition duration-300 font-medium"
+              >Accueil</a
+            >
+            <a
+              href="articles.html"
+              class="hover:text-wood-300 transition duration-300 font-medium"
+              >Produits</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-wood-300 transition duration-300 font-medium"
+              >À Propos</a
+            >
+            <a
+              href="contact.html"
+              class="hover:text-wood-300 transition duration-300 font-medium"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white focus:outline-none"
+            >
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+          <div class="flex flex-col space-y-3">
+            <a
+              href="../index.html"
+              class="hover:text-wood-300 transition duration-300 font-medium py-2"
+              >Accueil</a
+            >
+            <a
+              href="articles.html"
+              class="hover:text-wood-300 transition duration-300 font-medium py-2"
+              >Produits</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-wood-300 transition duration-300 font-medium py-2"
+              >À Propos</a
+            >
+            <a
+              href="contact.html"
+              class="hover:text-wood-300 transition duration-300 font-medium py-2"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-wood-800 text-white py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-serif font-bold mb-6">
+          Notre Histoire
+        </h1>
+        <p class="text-xl max-w-3xl mx-auto text-wood-200">
+          Découvrez l'histoire de CS-Kréyasion, une entreprise familiale
+          passionnée par l'artisanat martiniquais
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-20 bg-gradient-to-br from-sand-50 to-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-wood-900 mb-6">
+              L'Origine de CS-Kréyasion
+            </h2>
+            <div class="w-24 h-1 bg-martinique-red mx-auto mb-8"></div>
+            <p class="text-xl text-wood-700 max-w-3xl mx-auto leading-relaxed">
+              Une histoire de passion, de tradition et d'innovation
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Image Section -->
+            <div class="relative">
+              <div class="bg-gradient-to-br from-wood-200 to-wood-300 rounded-2xl p-8 h-96 flex items-center justify-center shadow-xl">
+                <div class="text-center">
+                  <div class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-hammer text-5xl text-wood-700"></i>
+                  </div>
+                  <p class="text-wood-700 font-medium">Atelier familial</p>
+                </div>
+              </div>
+              <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-martinique-red rounded-full flex items-center justify-center shadow-lg">
+                <i class="fas fa-heart text-white text-2xl"></i>
+              </div>
+            </div>
+            
+            <!-- Content Section -->
+            <div class="space-y-8">
+              <div class="bg-white rounded-xl p-8 shadow-lg">
+                <div class="flex items-start space-x-4">
+                  <div class="w-12 h-12 bg-martinique-red rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-seedling text-white"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-bold text-wood-900 mb-3">Nos Racines</h3>
+                    <p class="text-wood-700 leading-relaxed">
+                      CS-Kréyasion est née de la passion d'une famille martiniquaise pour l'artisanat traditionnel.
+                      Notre histoire commence dans un petit atelier familial où les techniques ancestrales se mêlent
+                      aux technologies modernes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-white rounded-xl p-8 shadow-lg">
+                <div class="flex items-start space-x-4">
+                  <div class="w-12 h-12 bg-martinique-green rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-lightbulb text-white"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-bold text-wood-900 mb-3">Notre Vision</h3>
+                    <p class="text-wood-700 leading-relaxed">
+                      Forts de notre héritage créole, nous avons développé une approche unique qui combine
+                      le respect des traditions avec l'innovation. Chaque création raconte une histoire
+                      de Martinique à travers l'utilisation de matériaux locaux et de techniques artisanales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-gradient-to-r from-martinique-red to-martinique-red-dark rounded-xl p-6 text-white">
+                <div class="flex items-center space-x-4">
+                  <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                    <i class="fas fa-map-marker-alt text-white"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold mb-1">100% Made in Martinique</h3>
+                    <p class="text-white/90">
+                      Conception et fabrication entièrement réalisées à la Martinique
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-4xl font-serif font-bold text-wood-900 mb-4"
+          >
+            Nos Valeurs
+          </h2>
+          <p class="text-wood-700 max-w-2xl mx-auto">
+            Les principes qui guident chaque création et chaque décision au sein
+            de CS-Kréyasion
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Value 1 -->
+          <div class="bg-sand-50 p-8 rounded-xl text-center">
+            <div
+              class="w-20 h-20 bg-wood-800 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-hands text-white text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-wood-900 mb-4">Artisanat</h3>
+            <p class="text-wood-700">
+              Chaque pièce est façonnée avec soin par nos artisans qualifiés,
+              garantissant unicité et qualité exceptionnelle.
+            </p>
+          </div>
+
+          <!-- Value 2 -->
+          <div class="bg-sand-50 p-8 rounded-xl text-center">
+            <div
+              class="w-20 h-20 bg-martinique-red rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-leaf text-white text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-wood-900 mb-4">Durabilité</h3>
+            <p class="text-wood-700">
+              Nous utilisons des matériaux locaux et durables, et nous nous
+              engageons à minimiser notre impact environnemental.
+            </p>
+          </div>
+
+          <!-- Value 3 -->
+          <div class="bg-sand-50 p-8 rounded-xl text-center">
+            <div
+              class="w-20 h-20 bg-martinique-green rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i class="fas fa-heart text-white text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-wood-900 mb-4">Passion</h3>
+            <p class="text-wood-700">
+              Notre passion pour l'artisanat martiniquais se reflète dans chaque
+              détail de nos créations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Process -->
+    <section class="py-20 bg-wood-900 text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">
+            Notre Processus de Création
+          </h2>
+          <p class="text-wood-200 max-w-2xl mx-auto">
+            Découvrez comment nos artisans transforment des matériaux bruts en
+            objets d'art uniques
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Step 1 -->
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-martinique-red rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <span class="text-white font-bold text-xl">1</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Conception</h3>
+            <p class="text-wood-200">
+              Nos designers créent des esquisses en s'inspirant de la culture
+              créole
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-martinique-red rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <span class="text-white font-bold text-xl">2</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Sélection des Matériaux</h3>
+            <p class="text-wood-200">
+              Choix minutieux des bois locaux, résines et tissus traditionnels
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-martinique-red rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <span class="text-white font-bold text-xl">3</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Fabrication</h3>
+            <p class="text-wood-200">
+              Utilisation d'impression 3D, découpe laser, couture et techniques
+              artisanales
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-martinique-red rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <span class="text-white font-bold text-xl">4</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Finition</h3>
+            <p class="text-wood-200">
+              Chaque pièce est soigneusement finie et inspectée pour garantir la
+              qualité
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="py-20 bg-sand-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-4xl font-serif font-bold text-wood-900 mb-4"
+          >
+            Notre Équipe
+          </h2>
+          <p class="text-wood-700 max-w-2xl mx-auto">
+            Une famille passionnée par l'artisanat martiniquais
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Team Member 1 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg text-center p-6"
+          >
+            <div class="w-32 h-32 rounded-full bg-wood-200 mx-auto mb-6"></div>
+            <h3 class="text-xl font-bold text-wood-900 mb-2">Claude Simon</h3>
+            <p class="text-martinique-red mb-4">Fondateur & Artisan</p>
+            <p class="text-wood-700">
+              Maître artisan avec plus de 20 ans d'expérience dans l'artisanat
+              martiniquais
+            </p>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg text-center p-6"
+          >
+            <div class="w-32 h-32 rounded-full bg-wood-200 mx-auto mb-6"></div>
+            <h3 class="text-xl font-bold text-wood-900 mb-2">Sophie Simon</h3>
+            <p class="text-martinique-red mb-4">Designer & Créatrice</p>
+            <p class="text-wood-700">
+              Designer passionnée par les motifs créoles et les tissus
+              traditionnels
+            </p>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg text-center p-6"
+          >
+            <div class="w-32 h-32 rounded-full bg-wood-200 mx-auto mb-6"></div>
+            <h3 class="text-xl font-bold text-wood-900 mb-2">Jean Simon</h3>
+            <p class="text-martinique-red mb-4">Technicien & Innovation</p>
+            <p class="text-wood-700">
+              Spécialiste des nouvelles technologies appliquées à l'artisanat
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section
+      class="py-20 bg-gradient-to-r from-martinique-red to-martinique-red-dark text-white"
+    >
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">
+          Découvrez nos créations artisanales
+        </h2>
+        <p class="text-wood-100 max-w-2xl mx-auto mb-8 text-xl">
+          Chaque pièce raconte une histoire de Martinique et de passion
+        </p>
+        <a
+          href="articles.html"
+          class="inline-block bg-white text-martinique-red hover:bg-wood-100 font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105"
+        >
+          Voir nos produits
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-wood-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <div>
+            <h3 class="text-2xl font-serif font-bold mb-6 flex items-center">
+              <span class="bg-wood-700 text-white p-2 rounded-lg mr-2">
+                <i class="fas fa-leaf"></i>
+              </span>
+              CS-Kréyasion
+            </h3>
+            <p class="text-wood-300 mb-6">
+              Créations artisanales made in Martinique avec passion et
+              tradition.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-wood-300 hover:text-white transition duration-300"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="text-wood-300 hover:text-white transition duration-300"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="text-wood-300 hover:text-white transition duration-300"
+              >
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">Navigation</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="../index.html"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="articles.html"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Produits</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >À Propos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">Catégories</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Lampes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Bijoux</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Sacs à Main</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Décoration</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">Contact</h4>
+            <ul class="space-y-3 text-wood-300">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                <span>Martinique, France</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-envelope mt-1 mr-3"></i>
+                <span>contact@cs-kreayasion.mq</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-phone mt-1 mr-3"></i>
+                <span>+596 000 000 00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-wood-800 pt-8 text-center text-wood-400">
+          <p>
+            &copy; 2023 CS-Kréyasion. Tous droits réservés. Créé avec passion à
+            la Martinique.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

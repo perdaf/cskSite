@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | CS-Kréyasion</title>
+    <meta
+      name="description"
+      content="Contactez CS-Kréyasion pour des commandes personnalisées ou pour visiter notre atelier à la Martinique."
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-wood-900 text-white sticky top-0 z-50 shadow-lg">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a
+              href="../index.html"
+              class="text-2xl font-serif font-bold flex items-center"
+            >
+              <span class="bg-wood-700 text-white p-2 rounded-lg mr-2">
+                <i class="fas fa-leaf"></i>
+              </span>
+              CS-Kréyasion
+            </a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="../index.html"
+              class="hover:text-wood-300 transition duration-300 font-medium"
+              >Accueil</a
+            >
+            <a
+              href="articles.html"
+              class="hover:text-wood-300 transition duration-300 font-medium"
+              >Produits</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-wood-300 transition duration-300 font-medium"
+              >À Propos</a
+            >
+            <a
+              href="contact.html"
+              class="hover:text-wood-300 transition duration-300 font-medium"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white focus:outline-none"
+            >
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+          <div class="flex flex-col space-y-3">
+            <a
+              href="../index.html"
+              class="hover:text-wood-300 transition duration-300 font-medium py-2"
+              >Accueil</a
+            >
+            <a
+              href="articles.html"
+              class="hover:text-wood-300 transition duration-300 font-medium py-2"
+              >Produits</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-wood-300 transition duration-300 font-medium py-2"
+              >À Propos</a
+            >
+            <a
+              href="contact.html"
+              class="hover:text-wood-300 transition duration-300 font-medium py-2"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-wood-800 text-white py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-serif font-bold mb-6">
+          Contactez-nous
+        </h1>
+        <p class="text-xl max-w-3xl mx-auto text-wood-200">
+          Nous serions ravis de vous entendre ! Contactez-nous pour des
+          commandes personnalisées ou pour visiter notre atelier
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-sand-50">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row">
+          <!-- Contact Form -->
+          <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+              <h2 class="text-2xl font-serif font-bold text-wood-900 mb-6">
+                Envoyez-nous un message
+              </h2>
+              <form id="contact-form">
+                <div class="mb-6">
+                  <label for="name" class="block text-wood-900 font-medium mb-2"
+                    >Nom complet</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-3 border border-wood-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-martinique-red"
+                    placeholder="Votre nom"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label
+                    for="email"
+                    class="block text-wood-900 font-medium mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-3 border border-wood-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-martinique-red"
+                    placeholder="votre@email.com"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label
+                    for="subject"
+                    class="block text-wood-900 font-medium mb-2"
+                    >Sujet</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    class="w-full px-4 py-3 border border-wood-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-martinique-red"
+                    placeholder="Sujet de votre message"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label
+                    for="message"
+                    class="block text-wood-900 font-medium mb-2"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="5"
+                    class="w-full px-4 py-3 border border-wood-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-martinique-red"
+                    placeholder="Votre message..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-wood-800 hover:bg-wood-900 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+                >
+                  Envoyer le message
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="lg:w-1/2">
+            <div class="bg-white rounded-xl shadow-lg p-8 h-full">
+              <h2 class="text-2xl font-serif font-bold text-wood-900 mb-6">
+                Informations de contact
+              </h2>
+
+              <div class="space-y-6">
+                <!-- Address -->
+                <div class="flex">
+                  <div class="mr-4 text-martinique-red">
+                    <i class="fas fa-map-marker-alt text-2xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-lg text-wood-900 mb-2">
+                      Adresse
+                    </h3>
+                    <p class="text-wood-700">
+                      Martinique, France<br />
+                      (Adresse précise fournie après confirmation)
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="flex">
+                  <div class="mr-4 text-martinique-red">
+                    <i class="fas fa-phone text-2xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-lg text-wood-900 mb-2">
+                      Téléphone
+                    </h3>
+                    <p class="text-wood-700">
+                      +596 000 000 00<br />
+                      Disponible du lundi au vendredi, 9h-17h
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex">
+                  <div class="mr-4 text-martinique-red">
+                    <i class="fas fa-envelope text-2xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-lg text-wood-900 mb-2">Email</h3>
+                    <p class="text-wood-700">
+                      contact@cs-kreayasion.mq<br />
+                      Nous répondons sous 24-48 heures
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="flex">
+                  <div class="mr-4 text-martinique-red">
+                    <i class="fas fa-hashtag text-2xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-lg text-wood-900 mb-2">
+                      Réseaux sociaux
+                    </h3>
+                    <div class="flex space-x-4 mt-2">
+                      <a
+                        href="#"
+                        class="text-wood-700 hover:text-martinique-red transition duration-300"
+                      >
+                        <i class="fab fa-facebook-f text-xl"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="text-wood-700 hover:text-martinique-red transition duration-300"
+                      >
+                        <i class="fab fa-instagram text-xl"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="text-wood-700 hover:text-martinique-red transition duration-300"
+                      >
+                        <i class="fab fa-pinterest-p text-xl"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Map -->
+              <div class="mt-10">
+                <h3 class="font-bold text-lg text-wood-900 mb-4">
+                  Notre atelier
+                </h3>
+                <div
+                  class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-64 flex items-center justify-center"
+                >
+                  <span class="text-wood-700"
+                    >Carte de localisation (Martinique)</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-4xl font-serif font-bold text-wood-900 mb-4"
+          >
+            Questions Fréquentes
+          </h2>
+          <p class="text-wood-700 max-w-2xl mx-auto">
+            Trouvez les réponses aux questions les plus courantes
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+          <!-- FAQ Item 1 -->
+          <div class="border-b border-wood-200 pb-6 mb-6">
+            <button class="flex justify-between items-center w-full text-left">
+              <h3 class="text-xl font-bold text-wood-900">
+                Combien de temps faut-il pour recevoir une commande ?
+              </h3>
+              <i class="fas fa-chevron-down text-martinique-red"></i>
+            </button>
+            <div class="mt-4 text-wood-700">
+              <p>
+                Le délai de livraison standard est de 7 à 14 jours ouvrables
+                pour la Martinique. Pour les commandes personnalisées, le délai
+                peut aller jusqu'à 3 semaines. Nous vous tiendrons informés de
+                l'avancement de votre commande.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="border-b border-wood-200 pb-6 mb-6">
+            <button class="flex justify-between items-center w-full text-left">
+              <h3 class="text-xl font-bold text-wood-900">
+                Proposez-vous des commandes personnalisées ?
+              </h3>
+              <i class="fas fa-chevron-down text-martinique-red"></i>
+            </button>
+            <div class="mt-4 text-wood-700">
+              <p>
+                Oui, nous proposons des commandes personnalisées pour tous nos
+                produits. Contactez-nous avec vos idées et nous travaillerons
+                ensemble pour créer une pièce unique qui correspond à vos
+                attentes.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="border-b border-wood-200 pb-6 mb-6">
+            <button class="flex justify-between items-center w-full text-left">
+              <h3 class="text-xl font-bold text-wood-900">
+                Quels sont vos modes de paiement ?
+              </h3>
+              <i class="fas fa-chevron-down text-martinique-red"></i>
+            </button>
+            <div class="mt-4 text-wood-700">
+              <p>
+                Nous acceptons les paiements par carte bancaire (Visa,
+                Mastercard), virement bancaire et PayPal. Pour les commandes
+                personnalisées, un acompte de 50% est requis à la commande.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="border-b border-wood-200 pb-6 mb-6">
+            <button class="flex justify-between items-center w-full text-left">
+              <h3 class="text-xl font-bold text-wood-900">
+                Puis-je visiter votre atelier ?
+              </h3>
+              <i class="fas fa-chevron-down text-martinique-red"></i>
+            </button>
+            <div class="mt-4 text-wood-700">
+              <p>
+                Absolument ! Nous organisons des visites sur rendez-vous. C'est
+                l'occasion de découvrir notre processus de création et de
+                rencontrer notre équipe d'artisans. Contactez-nous pour
+                programmer votre visite.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="py-16 bg-wood-800 text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-serif font-bold mb-4">
+          Restez informé de nos nouveautés
+        </h2>
+        <p class="text-wood-200 max-w-2xl mx-auto mb-8">
+          Inscrivez-vous à notre newsletter pour recevoir nos dernières
+          créations et offres spéciales
+        </p>
+        <div class="max-w-md mx-auto flex">
+          <input
+            type="email"
+            placeholder="Votre email"
+            class="flex-grow px-4 py-3 rounded-l-lg text-wood-900 focus:outline-none"
+          />
+          <button
+            class="bg-martinique-red hover:bg-martinique-red-dark px-6 py-3 rounded-r-lg font-bold transition duration-300"
+          >
+            S'inscrire
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-wood-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <div>
+            <h3 class="text-2xl font-serif font-bold mb-6 flex items-center">
+              <span class="bg-wood-700 text-white p-2 rounded-lg mr-2">
+                <i class="fas fa-leaf"></i>
+              </span>
+              CS-Kréyasion
+            </h3>
+            <p class="text-wood-300 mb-6">
+              Créations artisanales made in Martinique avec passion et
+              tradition.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-wood-300 hover:text-white transition duration-300"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="text-wood-300 hover:text-white transition duration-300"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="text-wood-300 hover:text-white transition duration-300"
+              >
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">Navigation</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="../index.html"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="articles.html"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Produits</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >À Propos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">Catégories</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Lampes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Bijoux</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Sacs à Main</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Décoration</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">Contact</h4>
+            <ul class="space-y-3 text-wood-300">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                <span>Martinique, France</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-envelope mt-1 mr-3"></i>
+                <span>contact@cs-kreayasion.mq</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-phone mt-1 mr-3"></i>
+                <span>+596 000 000 00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-wood-800 pt-8 text-center text-wood-400">
+          <p>
+            &copy; 2023 CS-Kréyasion. Tous droits réservés. Créé avec passion à
+            la Martinique.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

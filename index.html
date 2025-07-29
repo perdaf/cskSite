@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS-Kréyasion | Artisanat Martiniquais</title>
+    <meta
+      name="description"
+      content="CS-Kréyasion - Créations artisanales made in Martinique. Lampes, boucles d'oreilles, sacs à main et objets de décoration en bois, résine et tissus créoles."
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+  </head>
+  <body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-wood-900 text-white sticky top-0 z-50 shadow-lg">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a
+              href="index.html"
+              class="text-2xl font-serif font-bold flex items-center"
+            >
+              <span class="bg-wood-700 text-white p-2 rounded-lg mr-2">
+                <i class="fas fa-leaf"></i>
+              </span>
+              CS-Kréyasion
+            </a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="index.html"
+              class="hover:text-wood-300 transition duration-300 font-medium"
+              >Accueil</a
+            >
+            <a
+              href="pages/articles.html"
+              class="hover:text-wood-300 transition duration-300 font-medium"
+              >Produits</a
+            >
+            <a
+              href="pages/about.html"
+              class="hover:text-wood-300 transition duration-300 font-medium"
+              >À Propos</a
+            >
+            <a
+              href="pages/contact.html"
+              class="hover:text-wood-300 transition duration-300 font-medium"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white focus:outline-none"
+            >
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+          <div class="flex flex-col space-y-3">
+            <a
+              href="index.html"
+              class="hover:text-wood-300 transition duration-300 font-medium py-2"
+              >Accueil</a
+            >
+            <a
+              href="pages/articles.html"
+              class="hover:text-wood-300 transition duration-300 font-medium py-2"
+              >Produits</a
+            >
+            <a
+              href="pages/about.html"
+              class="hover:text-wood-300 transition duration-300 font-medium py-2"
+              >À Propos</a
+            >
+            <a
+              href="pages/contact.html"
+              class="hover:text-wood-300 transition duration-300 font-medium py-2"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-gradient-to-r from-wood-800 to-wood-900 text-white overflow-hidden"
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="container mx-auto px-4 py-32 relative z-10">
+        <div class="max-w-2xl">
+          <h1
+            class="text-4xl md:text-6xl font-serif font-bold mb-6 animate-fade-in-down"
+          >
+            Créations Artisanales
+            <span class="text-martinique-red">Martiniquaises</span>
+          </h1>
+          <p class="text-xl mb-8 text-wood-100 animate-fade-in-up">
+            Des objets uniques façonnés avec passion à la Martinique. Découvrez
+            nos lampes, bijoux, sacs à main et objets de décoration.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+          >
+            <a
+              href="pages/articles.html"
+              class="bg-martinique-red hover:bg-martinique-red-dark text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 text-center animate-fade-in-up delay-150"
+            >
+              Découvrir nos créations
+            </a>
+            <a
+              href="pages/contact.html"
+              class="bg-transparent border-2 border-white hover:bg-white hover:text-wood-900 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 text-center animate-fade-in-up delay-300"
+            >
+              Nous contacter
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative elements -->
+      <div
+        class="absolute top-20 right-10 w-32 h-32 rounded-full bg-martinique-red opacity-20 animate-pulse"
+      ></div>
+      <div
+        class="absolute bottom-10 left-20 w-24 h-24 rounded-full bg-martinique-green opacity-20 animate-pulse delay-1000"
+      ></div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-20 bg-sand-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-4xl font-serif font-bold text-wood-900 mb-4"
+          >
+            Nos Coups de Coeur
+          </h2>
+          <p class="text-wood-700 max-w-2xl mx-auto">
+            Découvrez nos créations les plus appréciées, conçues avec des
+            techniques artisanales et des matériaux locaux.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+        >
+          <!-- Product 1 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 flex flex-col"
+          >
+            <div class="h-64 relative overflow-hidden">
+              <div
+                class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full flex items-center justify-center"
+              >
+                <i class="fas fa-lightbulb text-4xl text-gray-400"></i>
+              </div>
+              <div
+                class="absolute top-4 right-4 bg-martinique-red text-white px-3 py-1 rounded-full text-sm font-bold"
+              >
+                Nouveau
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex-grow">
+                <h3 class="text-xl font-bold text-wood-900 mb-2">
+                  Lampe Créole
+                </h3>
+                <p class="text-wood-700 mb-4 text-sm leading-relaxed">
+                  Lampe en bois de citronnier avec motifs créoles
+                </p>
+              </div>
+              <div class="flex justify-between items-center mt-auto">
+                <span class="text-martinique-red font-bold text-xl">89€</span>
+                <a
+                  href="pages/articles.html"
+                  class="text-wood-900 hover:text-martinique-red font-medium flex items-center text-sm"
+                >
+                  Voir le produit
+                  <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 flex flex-col"
+          >
+            <div class="h-64 relative overflow-hidden">
+              <div
+                class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full flex items-center justify-center"
+              >
+                <i class="fas fa-gem text-4xl text-gray-400"></i>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex-grow">
+                <h3 class="text-xl font-bold text-wood-900 mb-2">
+                  Boucles d'Oreilles
+                </h3>
+                <p class="text-wood-700 mb-4 text-sm leading-relaxed">
+                  Boucles en résine avec motifs floraux
+                </p>
+              </div>
+              <div class="flex justify-between items-center mt-auto">
+                <span class="text-martinique-red font-bold text-xl">29€</span>
+                <a
+                  href="pages/articles.html"
+                  class="text-wood-900 hover:text-martinique-red font-medium flex items-center text-sm"
+                >
+                  Voir le produit
+                  <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 flex flex-col"
+          >
+            <div class="h-64 relative overflow-hidden">
+              <div
+                class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full flex items-center justify-center"
+              >
+                <i class="fas fa-shopping-bag text-4xl text-gray-400"></i>
+              </div>
+              <div
+                class="absolute top-4 right-4 bg-martinique-green text-white px-3 py-1 rounded-full text-sm font-bold"
+              >
+                Populaire
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex-grow">
+                <h3 class="text-xl font-bold text-wood-900 mb-2">Sac à Main</h3>
+                <p class="text-wood-700 mb-4 text-sm leading-relaxed">
+                  Sac en wax avec bandoulière en cuir
+                </p>
+              </div>
+              <div class="flex justify-between items-center mt-auto">
+                <span class="text-martinique-red font-bold text-xl">65€</span>
+                <a
+                  href="pages/articles.html"
+                  class="text-wood-900 hover:text-martinique-red font-medium flex items-center text-sm"
+                >
+                  Voir le produit
+                  <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="pages/articles.html"
+            class="inline-block bg-wood-800 hover:bg-wood-900 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105"
+          >
+            Voir tous les produits
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-wood-900 text-white w-full px-4 sm:px-6 lg:px-8">
+      <div class="container mx-auto px-4 max-w-7xl">
+        <!-- Section Title -->
+        <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6 text-center">
+          Notre Histoire
+        </h2>
+        <!-- end title -->
+
+        <!-- first two colonne -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="p-6 rounded-lg shadow-sm">
+            <div
+              class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96"
+            >
+              <img
+                src="imgs/about.jpg"
+                alt="Notre Atelier"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+          </div>
+
+          <div class="p-6 rounded-lg shadow-sm">
+            <p class="text-wood-200 mb-6 text-lg text-left">
+              CS-Kréyasion est une entreprise familiale martiniquaise passionnée
+              par l'artisanat traditionnel. Nous combinons des techniques
+              artisanales avec des technologies modernes comme l'impression 3D
+              et la découpe laser pour créer des objets uniques.
+            </p>
+            <p class="text-wood-200 mb-6 text-lg text-left">
+              Chaque création raconte une histoire de Martinique à travers
+              l'utilisation de bois locaux, de résines colorées et de tissus
+              traditionnels comme le madras et le wax.
+            </p>
+          </div>
+        </div>
+        <!-- end first two col-->
+
+        <!-- second tree colonne -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div class="flex items-center">
+            <div class="mr-4 text-martinique-red">
+              <i class="fas fa-leaf text-2xl"></i>
+            </div>
+            <div class="text-center">
+              <h3 class="font-bold text-lg">100% Martinique</h3>
+              <p class="text-wood-300 text-sm">
+                Conçu et fabriqué à la Martinique
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="mr-4 text-martinique-red">
+              <i class="fas fa-hands text-2xl"></i>
+            </div>
+            <div class="text-center">
+              <h3 class="font-bold text-lg">Artisanal</h3>
+              <p class="text-wood-300 text-sm">Chaque pièce est unique</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="mr-4 text-martinique-red">
+              <i class="fas fa-hands text-2xl"></i>
+            </div>
+            <div class="text-center">
+              <h3 class="font-bold text-lg">Artisanal</h3>
+              <p class="text-wood-300 text-sm">Chaque pièce est unique</p>
+            </div>
+          </div>
+        </div>
+        <!-- end tree col -->
+
+        <!-- button -->
+        <div class="text-center">
+          <a
+            href="pages/about.html"
+            class="inline-block mt-8 bg-martinique-red hover:bg-martinique-red-dark text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105"
+          >
+            En savoir plus
+          </a>
+        </div>
+        <!-- end button -->
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-sand-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-4xl font-serif font-bold text-wood-900 mb-4"
+          >
+            Ils nous ont fait confiance
+          </h2>
+          <p class="text-wood-700 max-w-2xl mx-auto">
+            Découvrez ce que nos clients pensent de nos créations
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 rounded-full bg-wood-200 mr-4"></div>
+              <div>
+                <h4 class="font-bold text-wood-900">Sophie Martin</h4>
+                <div class="flex text-martinique-red">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-wood-700 italic">
+              "La lampe créole que j'ai achetée est absolument magnifique ! La
+              qualité du bois et les finitions sont impeccables. Un vrai bijou
+              d'artisanat martiniquais !"
+            </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 rounded-full bg-wood-200 mr-4"></div>
+              <div>
+                <h4 class="font-bold text-wood-900">Jean-Pierre Dubois</h4>
+                <div class="flex text-martinique-red">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-wood-700 italic">
+              "Les boucles d'oreilles en résine sont tout simplement
+              extraordinaires. Elles attirent tous les regards quand ma femme
+              les porte. Un cadeau parfait pour une occasion spéciale !"
+            </p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 rounded-full bg-wood-200 mr-4"></div>
+              <div>
+                <h4 class="font-bold text-wood-900">Marie-Louise Thomas</h4>
+                <div class="flex text-martinique-red">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-wood-700 italic">
+              "Le sac à main en wax est à la fois élégant et pratique. La
+              combinaison des tissus traditionnels avec le design moderne est
+              remarquable. Je recommande vivement !"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section
+      class="py-20 bg-gradient-to-r from-martinique-red to-martinique-red-dark text-white"
+    >
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">
+          Prêt à découvrir nos créations ?
+        </h2>
+        <p class="text-wood-100 max-w-2xl mx-auto mb-8 text-xl">
+          Contactez-nous pour des commandes personnalisées ou pour visiter notre
+          atelier à la Martinique
+        </p>
+        <div
+          class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4"
+        >
+          <a
+            href="pages/contact.html"
+            class="bg-white text-martinique-red hover:bg-wood-100 font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 text-center"
+          >
+            Nous contacter
+          </a>
+          <a
+            href="pages/articles.html"
+            class="bg-transparent border-2 border-white hover:bg-white hover:text-martinique-red text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 text-center"
+          >
+            Voir nos produits
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-wood-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <div>
+            <h3 class="text-2xl font-serif font-bold mb-6 flex items-center">
+              <span class="bg-wood-700 text-white p-2 rounded-lg mr-2">
+                <i class="fas fa-leaf"></i>
+              </span>
+              CS-Kréyasion
+            </h3>
+            <p class="text-wood-300 mb-6">
+              Créations artisanales made in Martinique avec passion et
+              tradition.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-wood-300 hover:text-white transition duration-300"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="text-wood-300 hover:text-white transition duration-300"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="text-wood-300 hover:text-white transition duration-300"
+              >
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">Navigation</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/articles.html"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Produits</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/about.html"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >À Propos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/contact.html"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">Catégories</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Lampes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Bijoux</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Sacs à Main</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-wood-300 hover:text-white transition duration-300"
+                  >Décoration</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">Contact</h4>
+            <ul class="space-y-3 text-wood-300">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                <span>Martinique, France</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-envelope mt-1 mr-3"></i>
+                <span>contact@cs-kreayasion.mq</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-phone mt-1 mr-3"></i>
+                <span>+596 000 000 00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-wood-800 pt-8 text-center text-wood-400">
+          <p>
+            &copy; 2023 CS-Kréyasion. Tous droits réservés. Créé avec passion à
+            la Martinique.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
