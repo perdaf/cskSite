@@ -28,6 +28,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- js-yaml library -->
+    <script src="../js/js-yaml.min.js"></script>
   </head>
   <body class="font-sans">
     <!-- Navigation -->
@@ -39,9 +42,9 @@
               href="../index.html"
               class="text-2xl font-serif font-bold flex items-center"
             >
-              <span class="bg-wood-700 text-white p-2 rounded-lg mr-2">
+              <!-- <span class="bg-wood-700 text-white p-2 rounded-lg mr-2">
                 <i class="fas fa-leaf"></i>
-              </span>
+              </span> -->
               CS-Kréyasion
             </a>
           </div>
@@ -112,10 +115,16 @@
     <!-- Hero Section -->
     <section class="bg-wood-800 text-white py-20">
       <div class="container mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-serif font-bold mb-6">
+        <h1
+          class="text-4xl md:text-5xl font-serif font-bold mb-6"
+          data-content="contact.hero.title"
+        >
           Contactez-nous
         </h1>
-        <p class="text-xl max-w-3xl mx-auto text-wood-200">
+        <p
+          class="text-xl max-w-3xl mx-auto text-wood-200"
+          data-content="contact.hero.subtitle"
+        >
           Nous serions ravis de vous entendre ! Contactez-nous pour des
           commandes personnalisées ou pour visiter notre atelier
         </p>
@@ -129,14 +138,21 @@
           <!-- Contact Form -->
           <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
             <div class="bg-white rounded-xl shadow-lg p-8">
-              <h2 class="text-2xl font-serif font-bold text-wood-900 mb-6">
+              <h2
+                class="text-2xl font-serif font-bold text-wood-900 mb-6"
+                data-content="contact.form.title"
+              >
                 Envoyez-nous un message
               </h2>
               <form id="contact-form">
                 <div class="mb-6">
-                  <label for="name" class="block text-wood-900 font-medium mb-2"
-                    >Nom complet</label
+                  <label
+                    for="name"
+                    class="block text-wood-900 font-medium mb-2"
+                    data-content="contact.form.nameLabel"
                   >
+                    Nom complet
+                  </label>
                   <input
                     type="text"
                     id="name"
@@ -148,8 +164,10 @@
                   <label
                     for="email"
                     class="block text-wood-900 font-medium mb-2"
-                    >Email</label
+                    data-content="contact.form.emailLabel"
                   >
+                    Email
+                  </label>
                   <input
                     type="email"
                     id="email"
@@ -161,8 +179,10 @@
                   <label
                     for="subject"
                     class="block text-wood-900 font-medium mb-2"
-                    >Sujet</label
+                    data-content="contact.form.subjectLabel"
                   >
+                    Sujet
+                  </label>
                   <input
                     type="text"
                     id="subject"
@@ -174,8 +194,10 @@
                   <label
                     for="message"
                     class="block text-wood-900 font-medium mb-2"
-                    >Message</label
+                    data-content="contact.form.messageLabel"
                   >
+                    Message
+                  </label>
                   <textarea
                     id="message"
                     rows="5"
@@ -186,6 +208,7 @@
                 <button
                   type="submit"
                   class="w-full bg-wood-800 hover:bg-wood-900 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+                  data-content="contact.form.submitButton"
                 >
                   Envoyer le message
                 </button>
@@ -196,7 +219,10 @@
           <!-- Contact Information -->
           <div class="lg:w-1/2">
             <div class="bg-white rounded-xl shadow-lg p-8 h-full">
-              <h2 class="text-2xl font-serif font-bold text-wood-900 mb-6">
+              <h2
+                class="text-2xl font-serif font-bold text-wood-900 mb-6"
+                data-content="contact.info.title"
+              >
                 Informations de contact
               </h2>
 
@@ -207,10 +233,16 @@
                     <i class="fas fa-map-marker-alt text-2xl"></i>
                   </div>
                   <div>
-                    <h3 class="font-bold text-lg text-wood-900 mb-2">
+                    <h3
+                      class="font-bold text-lg text-wood-900 mb-2"
+                      data-content="contact.address.title"
+                    >
                       Adresse
                     </h3>
-                    <p class="text-wood-700">
+                    <p
+                      class="text-wood-700"
+                      data-content="contact.address.content"
+                    >
                       Martinique, France<br />
                       (Adresse précise fournie après confirmation)
                     </p>
@@ -223,10 +255,16 @@
                     <i class="fas fa-phone text-2xl"></i>
                   </div>
                   <div>
-                    <h3 class="font-bold text-lg text-wood-900 mb-2">
+                    <h3
+                      class="font-bold text-lg text-wood-900 mb-2"
+                      data-content="contact.phone.title"
+                    >
                       Téléphone
                     </h3>
-                    <p class="text-wood-700">
+                    <p
+                      class="text-wood-700"
+                      data-content="contact.phone.content"
+                    >
                       +596 000 000 00<br />
                       Disponible du lundi au vendredi, 9h-17h
                     </p>
@@ -239,8 +277,16 @@
                     <i class="fas fa-envelope text-2xl"></i>
                   </div>
                   <div>
-                    <h3 class="font-bold text-lg text-wood-900 mb-2">Email</h3>
-                    <p class="text-wood-700">
+                    <h3
+                      class="font-bold text-lg text-wood-900 mb-2"
+                      data-content="contact.email.title"
+                    >
+                      Email
+                    </h3>
+                    <p
+                      class="text-wood-700"
+                      data-content="contact.email.content"
+                    >
                       contact@cs-kreayasion.mq<br />
                       Nous répondons sous 24-48 heures
                     </p>
@@ -253,7 +299,10 @@
                     <i class="fas fa-hashtag text-2xl"></i>
                   </div>
                   <div>
-                    <h3 class="font-bold text-lg text-wood-900 mb-2">
+                    <h3
+                      class="font-bold text-lg text-wood-900 mb-2"
+                      data-content="contact.social.title"
+                    >
                       Réseaux sociaux
                     </h3>
                     <div class="flex space-x-4 mt-2">
@@ -282,7 +331,10 @@
 
               <!-- Map -->
               <div class="mt-10">
-                <h3 class="font-bold text-lg text-wood-900 mb-4">
+                <h3
+                  class="font-bold text-lg text-wood-900 mb-4"
+                  data-content="contact.map.title"
+                >
                   Notre atelier
                 </h3>
                 <div
@@ -547,6 +599,23 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="../js/main.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module">
+      import { parseMarkdownContent } from "../js/content-parser.js";
+      import { renderContactContent } from "../js/data-renderer.js";
+
+      async function loadContactContent() {
+        try {
+          const response = await fetch("../data/content.md");
+          const markdown = await response.text();
+          const content = parseMarkdownContent(markdown);
+          renderContactContent(content);
+        } catch (error) {
+          console.error("Error loading contact content:", error);
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", loadContactContent);
+    </script>
   </body>
 </html>

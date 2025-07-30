@@ -28,6 +28,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- js-yaml library -->
+    <script src="../js/js-yaml.min.js"></script>
   </head>
   <body class="font-sans">
     <!-- Navigation -->
@@ -39,9 +42,9 @@
               href="../index.html"
               class="text-2xl font-serif font-bold flex items-center"
             >
-              <span class="bg-wood-700 text-white p-2 rounded-lg mr-2">
+              <!-- <span class="bg-wood-700 text-white p-2 rounded-lg mr-2">
                 <i class="fas fa-leaf"></i>
-              </span>
+              </span> -->
               CS-Kréyasion
             </a>
           </div>
@@ -112,10 +115,16 @@
     <!-- Hero Section -->
     <section class="bg-wood-800 text-white py-20">
       <div class="container mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-5xl font-serif font-bold mb-6">
+        <h1
+          class="text-4xl md:text-5xl font-serif font-bold mb-6"
+          data-content="about.hero.title"
+        >
           Notre Histoire
         </h1>
-        <p class="text-xl max-w-3xl mx-auto text-wood-200">
+        <p
+          class="text-xl max-w-3xl mx-auto text-wood-200"
+          data-content="about.hero.subtitle"
+        >
           Découvrez l'histoire de CS-Kréyasion, une entreprise familiale
           passionnée par l'artisanat martiniquais
         </p>
@@ -127,7 +136,9 @@
       <div class="container mx-auto px-4">
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-serif font-bold text-wood-900 mb-6">
+            <h2
+              class="text-4xl md:text-5xl font-serif font-bold text-wood-900 mb-6"
+            >
               L'Origine de CS-Kréyasion
             </h2>
             <div class="w-24 h-1 bg-martinique-red mx-auto mb-8"></div>
@@ -135,66 +146,91 @@
               Une histoire de passion, de tradition et d'innovation
             </p>
           </div>
-          
+
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <!-- Image Section -->
             <div class="relative">
-              <div class="bg-gradient-to-br from-wood-200 to-wood-300 rounded-2xl p-8 h-96 flex items-center justify-center shadow-xl">
+              <div
+                class="bg-gradient-to-br from-wood-200 to-wood-300 rounded-2xl p-8 h-96 flex items-center justify-center shadow-xl"
+              >
                 <div class="text-center">
-                  <div class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div
+                    class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4"
+                  >
                     <i class="fas fa-hammer text-5xl text-wood-700"></i>
                   </div>
                   <p class="text-wood-700 font-medium">Atelier familial</p>
                 </div>
               </div>
-              <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-martinique-red rounded-full flex items-center justify-center shadow-lg">
+              <div
+                class="absolute -bottom-4 -right-4 w-24 h-24 bg-martinique-red rounded-full flex items-center justify-center shadow-lg"
+              >
                 <i class="fas fa-heart text-white text-2xl"></i>
               </div>
             </div>
-            
+
             <!-- Content Section -->
             <div class="space-y-8">
               <div class="bg-white rounded-xl p-8 shadow-lg">
                 <div class="flex items-start space-x-4">
-                  <div class="w-12 h-12 bg-martinique-red rounded-full flex items-center justify-center flex-shrink-0">
+                  <div
+                    class="w-12 h-12 bg-martinique-red rounded-full flex items-center justify-center flex-shrink-0"
+                  >
                     <i class="fas fa-seedling text-white"></i>
                   </div>
                   <div>
-                    <h3 class="text-2xl font-bold text-wood-900 mb-3">Nos Racines</h3>
+                    <h3 class="text-2xl font-bold text-wood-900 mb-3">
+                      Nos Racines
+                    </h3>
                     <p class="text-wood-700 leading-relaxed">
-                      CS-Kréyasion est née de la passion d'une famille martiniquaise pour l'artisanat traditionnel.
-                      Notre histoire commence dans un petit atelier familial où les techniques ancestrales se mêlent
-                      aux technologies modernes.
+                      CS-Kréyasion est née de la passion d'une famille
+                      martiniquaise pour l'artisanat traditionnel. Notre
+                      histoire commence dans un petit atelier familial où les
+                      techniques ancestrales se mêlent aux technologies
+                      modernes.
                     </p>
                   </div>
                 </div>
               </div>
-              
+
               <div class="bg-white rounded-xl p-8 shadow-lg">
                 <div class="flex items-start space-x-4">
-                  <div class="w-12 h-12 bg-martinique-green rounded-full flex items-center justify-center flex-shrink-0">
+                  <div
+                    class="w-12 h-12 bg-martinique-green rounded-full flex items-center justify-center flex-shrink-0"
+                  >
                     <i class="fas fa-lightbulb text-white"></i>
                   </div>
                   <div>
-                    <h3 class="text-2xl font-bold text-wood-900 mb-3">Notre Vision</h3>
+                    <h3 class="text-2xl font-bold text-wood-900 mb-3">
+                      Notre Vision
+                    </h3>
                     <p class="text-wood-700 leading-relaxed">
-                      Forts de notre héritage créole, nous avons développé une approche unique qui combine
-                      le respect des traditions avec l'innovation. Chaque création raconte une histoire
-                      de Martinique à travers l'utilisation de matériaux locaux et de techniques artisanales.
+                      Forts de notre héritage créole, nous avons développé une
+                      approche unique qui combine le respect des traditions avec
+                      l'innovation. Chaque création raconte une histoire de
+                      Martinique à travers l'utilisation de matériaux locaux et
+                      de techniques artisanales.
                     </p>
                   </div>
                 </div>
               </div>
-              
-              <div class="bg-gradient-to-r from-martinique-red to-martinique-red-dark rounded-xl p-6 text-white">
+
+              <div
+                class="bg-gradient-to-r from-martinique-red to-martinique-red-dark rounded-xl p-6 text-white"
+              >
                 <div class="flex items-center space-x-4">
-                  <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                  <div
+                    class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center"
+                  >
                     <i class="fas fa-map-marker-alt text-white"></i>
                   </div>
                   <div>
-                    <h3 class="text-xl font-bold mb-1">100% Made in Martinique</h3>
+                    <h3 class="text-xl font-bold mb-1">
+                      100% Made in Martinique
+                    </h3>
                     <p class="text-white/90">
-                      Conception et fabrication entièrement réalisées à la Martinique
+                      Conception et fabrication entièrement réalisées à la
+                      Martinique
                     </p>
                   </div>
                 </div>
@@ -211,57 +247,24 @@
         <div class="text-center mb-16">
           <h2
             class="text-3xl md:text-4xl font-serif font-bold text-wood-900 mb-4"
+            data-content="about.values.title"
           >
             Nos Valeurs
           </h2>
-          <p class="text-wood-700 max-w-2xl mx-auto">
+          <p
+            class="text-wood-700 max-w-2xl mx-auto"
+            data-content="about.values.subtitle"
+          >
             Les principes qui guident chaque création et chaque décision au sein
             de CS-Kréyasion
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Value 1 -->
-          <div class="bg-sand-50 p-8 rounded-xl text-center">
-            <div
-              class="w-20 h-20 bg-wood-800 rounded-full flex items-center justify-center mx-auto mb-6"
-            >
-              <i class="fas fa-hands text-white text-3xl"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-wood-900 mb-4">Artisanat</h3>
-            <p class="text-wood-700">
-              Chaque pièce est façonnée avec soin par nos artisans qualifiés,
-              garantissant unicité et qualité exceptionnelle.
-            </p>
-          </div>
-
-          <!-- Value 2 -->
-          <div class="bg-sand-50 p-8 rounded-xl text-center">
-            <div
-              class="w-20 h-20 bg-martinique-red rounded-full flex items-center justify-center mx-auto mb-6"
-            >
-              <i class="fas fa-leaf text-white text-3xl"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-wood-900 mb-4">Durabilité</h3>
-            <p class="text-wood-700">
-              Nous utilisons des matériaux locaux et durables, et nous nous
-              engageons à minimiser notre impact environnemental.
-            </p>
-          </div>
-
-          <!-- Value 3 -->
-          <div class="bg-sand-50 p-8 rounded-xl text-center">
-            <div
-              class="w-20 h-20 bg-martinique-green rounded-full flex items-center justify-center mx-auto mb-6"
-            >
-              <i class="fas fa-heart text-white text-3xl"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-wood-900 mb-4">Passion</h3>
-            <p class="text-wood-700">
-              Notre passion pour l'artisanat martiniquais se reflète dans chaque
-              détail de nos créations.
-            </p>
-          </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8"
+          id="values-container"
+        >
+          <!-- Values will be populated dynamically -->
         </div>
       </div>
     </section>
@@ -344,52 +347,20 @@
         <div class="text-center mb-16">
           <h2
             class="text-3xl md:text-4xl font-serif font-bold text-wood-900 mb-4"
+            data-content="about.team.title"
           >
             Notre Équipe
           </h2>
-          <p class="text-wood-700 max-w-2xl mx-auto">
+          <p
+            class="text-wood-700 max-w-2xl mx-auto"
+            data-content="about.team.subtitle"
+          >
             Une famille passionnée par l'artisanat martiniquais
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Team Member 1 -->
-          <div
-            class="bg-white rounded-xl overflow-hidden shadow-lg text-center p-6"
-          >
-            <div class="w-32 h-32 rounded-full bg-wood-200 mx-auto mb-6"></div>
-            <h3 class="text-xl font-bold text-wood-900 mb-2">Claude Simon</h3>
-            <p class="text-martinique-red mb-4">Fondateur & Artisan</p>
-            <p class="text-wood-700">
-              Maître artisan avec plus de 20 ans d'expérience dans l'artisanat
-              martiniquais
-            </p>
-          </div>
-
-          <!-- Team Member 2 -->
-          <div
-            class="bg-white rounded-xl overflow-hidden shadow-lg text-center p-6"
-          >
-            <div class="w-32 h-32 rounded-full bg-wood-200 mx-auto mb-6"></div>
-            <h3 class="text-xl font-bold text-wood-900 mb-2">Sophie Simon</h3>
-            <p class="text-martinique-red mb-4">Designer & Créatrice</p>
-            <p class="text-wood-700">
-              Designer passionnée par les motifs créoles et les tissus
-              traditionnels
-            </p>
-          </div>
-
-          <!-- Team Member 3 -->
-          <div
-            class="bg-white rounded-xl overflow-hidden shadow-lg text-center p-6"
-          >
-            <div class="w-32 h-32 rounded-full bg-wood-200 mx-auto mb-6"></div>
-            <h3 class="text-xl font-bold text-wood-900 mb-2">Jean Simon</h3>
-            <p class="text-martinique-red mb-4">Technicien & Innovation</p>
-            <p class="text-wood-700">
-              Spécialiste des nouvelles technologies appliquées à l'artisanat
-            </p>
-          </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="team-container">
+          <!-- Team members will be populated dynamically -->
         </div>
       </div>
     </section>
@@ -548,6 +519,93 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="../js/main.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module">
+      import { parseMarkdownContent } from "../js/content-parser.js";
+
+      async function loadAboutContent() {
+        try {
+          const response = await fetch("/data/content.md");
+          const markdown = await response.text();
+          const content = parseMarkdownContent(markdown);
+
+          if (content.about) {
+            // Update about story content
+            const storyElements = document.querySelectorAll(
+              '[data-content*="about"]'
+            );
+            storyElements.forEach((element) => {
+              const contentKey = element.getAttribute("data-content");
+              if (contentKey === "about.hero.title" && content.about.headline) {
+                element.textContent = content.about.headline;
+              }
+              if (
+                contentKey === "about.hero.subtitle" &&
+                content.about.content
+              ) {
+                element.textContent = content.about.content;
+              }
+            });
+
+            // Render values if available
+            if (content.about.values && content.about.values.length > 0) {
+              renderValues(content.about.values);
+            }
+
+            // Render team if available
+            if (content.about.team && content.about.team.length > 0) {
+              renderTeam(content.about.team);
+            }
+          }
+        } catch (error) {
+          console.error("Error loading about content:", error);
+        }
+      }
+
+      function renderValues(values) {
+        const container = document.getElementById("values-container");
+        if (!container) return;
+
+        container.innerHTML = values
+          .map(
+            (value) => `
+          <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-martinique-red rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="${value.icon || "fas fa-star"} text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-wood-900 mb-3">${value.title}</h3>
+            <p class="text-wood-700">${value.content}</p>
+          </div>
+        `
+          )
+          .join("");
+      }
+
+      function renderTeam(team) {
+        const container = document.getElementById("team-container");
+        if (!container) return;
+
+        container.innerHTML = team
+          .map(
+            (member) => `
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center hover:shadow-xl transition duration-300">
+            <div class="h-64 bg-gradient-to-br from-wood-200 to-wood-300 flex items-center justify-center">
+              <div class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center">
+                <i class="fas fa-user text-6xl text-wood-600"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-wood-900 mb-2">${member.name}</h3>
+              <p class="text-martinique-red font-medium mb-3">${member.role}</p>
+              <p class="text-wood-700 text-sm">${member.description}</p>
+            </div>
+          </div>
+        `
+          )
+          .join("");
+      }
+
+      document.addEventListener("DOMContentLoaded", loadAboutContent);
+    </script>
   </body>
 </html>
